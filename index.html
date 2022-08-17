@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Magill</title>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet" crossorigin="anonymous">
+
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    a.anchor {
+      display: block;
+      position: relative;
+      top: -50px;
+      visibility: hidden;
+    }
+
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+
+    }
+
+    @media (min-width: 1400px) {
+      .text-top {
+        text-align: left;
+      }
+
+    }
+
+    @media (max-width: 768px) {
+      .img-profile {
+        width: 120px;
+        height: 120px;
+      }
+      a.anchor {
+        top: -130px;
+      }
+
+    }
+
+
+
+
+
+
+    .b-example-divider {
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+
+
+
+  </style>
+
+
+</head>
+
+
+<body>
+
+
+  <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-dark py-1">
+    <div class="container d-flex flex-wrap">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-brand">
+        <strong>Ethan Magill</strong>
+      </div>
+      <div class="order-md-5 my-auto align-content-end" style="font-size: 1.3rem">
+        <a href="mailto:ethanmagill@gmail.com"><i class="bi bi-envelope-fill text-light"></i></a>
+        <a href="https://www.linkedin.com/in/ethan-magill-a95965235/"><i class="bi bi-linkedin text-light"></i></a>
+      </div>
+      <ul class="order-md-4 collapse navbar-collapse navbar-nav mx-2">
+        <li class="nav-item">
+          <a class="nav-link" href="#about-me">About me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#made">Things I've made</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+
+
+<main id="main-text">
+  <div class="py-2 text-center container">
+    <div class="row row-cols-1 row-cols-xxl-2 py-lg-3 ">
+      <div class="col-xxl-1"></div>
+      <div class="col-xxl-1 mx-auto my-xxl-auto"><img src="/core/data/profile.jpg" width="170" height="170" class="img-profile my-2 rounded-circle"></div>
+      <div class="text-top col-lg-6 col-md-8 mx-auto my-xxl-auto">
+
+        <h2 class="fw-light">I'm Ethan</h2>
+        <p class="lead">I like to make things and solve difficult problems. If you have some difficult problems you'd like my help with, let me know!</p>
+        <p>
+          <a href="/core/CV.pdf" class="btn btn-info">My CV</a>
+          <a href="mailto:ethanmagill@gmail.com" class="btn btn-light">Email me</a>
+        </p>
+      </div>
+      <div class="col-xxl-1"></div>
+    </div>
+  </div>
+
+  <div class="py-5 bg-light">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-xl-2 g-4" >
+
+        <div class="col-xl-4">
+          <div class="card shadow">
+            <a class="anchor" id="about-me"></a>
+            <a href="#about-me" class="card-header btn btn-light text-start">
+              <h4 class="fw-normal my-1">About me</h4>
+            </a>
+            <div class="card-body">
+              <p class="card-text">I've worked in finance, strategy, economics, data science, and policy in my career so far. Although I've never had a paid job in it, I have a strong interest in software/tech.</p>
+              <p class="card-text">I want to use my career to have a positive impact on the world, and I'm open to suggestions on how to do that. </p>
+              <div class="d-flex justify-content-end align-items-center">
+                <div class="d-block">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Read more about me</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-8">
+          <div class="card shadow">
+            <a class="anchor" id="made"></a>
+            <a href="#made" class="card-header btn btn-light text-start">
+              <h4 class="fw-normal my-1">Things I've made</h4>
+            </a>
+            <div class="card-body">
+              <p class="card-text">I like to make things sometimes. Here's a list of some interesting ones.</p>
+              <div class="px-2 py-md-2 pb-4 pb-md-4">
+                <div class="d-grid d-md-flex justify-content-between align-items-center">
+                  <div class="fw-light fs-6 pe-2">
+                    <h5>Market Data Dashboard</h5>
+                    <p>A basic dashboard made written in javascript, that charts and provides downloadable datasets for the price and trading volume of any stock, FX pair, or Crypto pair.</p>
+                  </div>
+                  <div class="btn-group btn-group-sm">
+                    <a class="btn btn-primary px-3" href="/core/dashboard.html">View</a>
+                    <a class="btn btn-light" href="https://github.com/erj177/data-dashboard">GitHub</a>
+                  </div>
+                </div>
+                <hr>
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-stretch align-items-md-center">
+                  <div class="fw-light fs-6 pe-2 ">
+                    <h5>This webpage</h5>
+                    <p>A basic homepage made using Bootstrap and CSS. I like to think it looks pretty.</p>
+                  </div>
+                  <div class="btn-group btn-group-sm">
+                    <button class="btn btn-primary px-3" data-bs-toggle="popover" data-bs-content="Uhh... You're already here!" data-bs-placement="left" data-bs-trigger="focus">View</button>
+                    <div class="btn btn-light">GitHub</div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="d-flex justify-content-end align-items-center">
+                <div class="d-block">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">See more</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-8">
+          <div class="card shadow">
+            <a class="anchor" id="card-3"></a>
+            <a href="#card-3" class="card-header btn btn-light text-start">
+              <h4 class="fw-normal my-1">Another box</h4>
+            </a>
+            <div class="card-body">
+              <p class="card-text">Content TBC</p>
+
+              <div class="d-flex justify-content-end align-items-center">
+                <div class="d-block">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">See more</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+</main>
+
+
+
+
+
+
+
+
+</body>
+
+
+<footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+
+    $(document).ready(function(){
+      $('[data-bs-toggle="popover"]').popover();
+    });
+
+  </script>
+</footer>
+</html>

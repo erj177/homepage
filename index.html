@@ -1,53 +1,18 @@
 <!DOCTYPE html>
+
+<meta charset="UTF-8">
+
 <html lang="en">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Magill</title>
+  <title>Ethan Magill</title>
 
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet" crossorigin="anonymous">
+  <link href="/style.css" rel="stylesheet" crossorigin="anonymous">
 
 
-
-  <style>
-    
-
-    a.anchor {
-      display: block;
-      position: relative;
-      top: -50px;
-      visibility: hidden;
-    }
-
-
-
-
-    @media (min-width: 1400px) {
-      .text-top {
-        text-align: left;
-      }
-
-    }
-
-    @media (max-width: 768px) {
-      .img-profile {
-        width: 120px;
-        height: 120px;
-      }
-      a.anchor {
-        top: -130px;
-      }
-
-    }
-
-
-
-
-
-
-
-  </style>
 
 
 </head>
@@ -56,24 +21,33 @@
 <body>
 
 
-  <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-dark py-1">
+  <nav class="navbar navbar-expand-lg sticky-top bg-dark navbar-dark py-1">
     <div class="container d-flex flex-wrap">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler shadow-none border-0" style="width: 46.4px" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="bi bi-list text-white fs-1"></span>
       </button>
-      <div class="navbar-brand">
+      <a class="navbar-brand mx-0" href="#">
         <strong>Ethan Magill</strong>
-      </div>
-      <div class="order-md-5 my-auto align-content-end" style="font-size: 1.3rem">
+      </a>
+      <div class="order-lg-5 my-auto align-content-end" style="font-size: 1.3rem">
         <a href="mailto:ethanmagill@gmail.com"><i class="bi bi-envelope-fill text-light"></i></a>
         <a href="https://www.linkedin.com/in/ethan-magill-a95965235/"><i class="bi bi-linkedin text-light"></i></a>
       </div>
-      <ul class="order-md-4 collapse navbar-collapse navbar-nav mx-2">
+      <ul class="order-lg-4 collapse navbar-collapse navbar-nav mx-2">
         <li class="nav-item">
           <a class="nav-link" href="#about-me">About me</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#made">Things I've made</a>
+          <a class="nav-link" href="#do">What I can do</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#made">Example coding projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#done">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#read">Things I read</a>
         </li>
       </ul>
 
@@ -83,58 +57,202 @@
 
 
 <main id="main-text">
-  <div class="py-2 text-center container">
-    <div class="row row-cols-1 row-cols-xxl-2 py-lg-3 ">
-      <div class="col-xxl-1"></div>
-      <div class="col-xxl-1 mx-auto my-xxl-auto"><img src="/core/data/profile.jpg" width="170" height="170" class="img-profile my-2 rounded-circle"></div>
-      <div class="text-top col-lg-6 col-md-8 mx-auto my-xxl-auto">
+  <div class="bg-light">
+  <div class="top-bar bg-white shadow">
+    <div class="py-2 text-center container ">
+      <div class="row row-cols-1 row-cols-xxl-2 py-lg-3 d-flex">
+        <div class="col-xxl-1"></div>
+        <div class="col-xxl-1 mx-auto my-xl-auto"><img src="/core/data/profile.jpg" width="170" height="170" class="img-profile my-2 rounded-circle"></div>
+        <div class="text-top col-lg-6 col-md-8 mx-auto my-xxl-auto">
 
-        <h2 class="fw-light">I'm Ethan</h2>
-        <p class="lead">I like to make things and solve difficult problems. If you have some difficult problems you'd like my help with, let me know!</p>
-        <p>
-          <a href="/core/CV.pdf" class="btn btn-info">My CV</a>
-          <a href="mailto:ethanmagill@gmail.com" class="btn btn-light">Email me</a>
-        </p>
+          <h2 class="fw-light">I'm Ethan</h2>
+          <p class="lead">I like to build things and solve problems. If you have some difficult problems you'd like my help with, let me know!</p>
+          <p>
+            <a href="/core/CV.pdf" class="btn btn-info">My CV</a>
+            <a href="mailto:ethanmagill@gmail.com" class="btn btn-light">Email me</a>
+          </p>
+        </div>
+        <div class="col-xxl-1"></div>
       </div>
-      <div class="col-xxl-1"></div>
     </div>
   </div>
 
-  <div class="py-5 bg-light">
+  <div class="py-5">
     <div class="container">
-      <div class="row row-cols-1 row-cols-xl-2 g-4" >
+      <div class="row row-cols-1 row-cols-lg-2 g-4 masonryContainer justify-content-center" style="visibility: hidden; opacity: 0; margin-top: 0px; transition: opacity 1s, margin-top 1s;">
 
-        <div class="col-xl-4">
-          <div class="card shadow">
+        <div class="col-lg-4 left-bar">
+          <div class="card shadow order-first mx-lg-0" style="margin-left: 12px; margin-right: 12px;">
             <a class="anchor" id="about-me"></a>
             <a href="#about-me" class="card-header btn btn-light text-start">
               <h4 class="fw-normal my-1">About me</h4>
             </a>
-            <div class="card-body">
-              <p class="card-text">I've worked in finance, strategy, economics, data science, and policy in my career so far. Although I've never had a paid job in it, I have a strong interest in software/tech.</p>
-              <p class="card-text">I want to use my career to have a positive impact on the world, and I'm open to suggestions on how to do that. </p>
+            <div class="card-body ">
+              <p class="card-text">I've worked in three government departments across three different professions, building a wide range of experiences and skills.</p>
+              <p class="card-text">I'm now planning to get new experiences in the private sector, and am currently looking at options in management or economic consultancy.</p>
               <div class="d-flex justify-content-end align-items-center">
                 <div class="d-block">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Read more about me</button>
+                  <!--<button type="button" class="btn btn-sm btn-outline-secondary">Read more about me</button>-->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card shadow mt-4 order-last mx-lg-0 flex-grow-1" style="margin-left: 12px; margin-right: 12px;">
+            <a class="anchor" id="read"></a>
+            <a href="#read" class="card-header btn btn-light text-start">
+              <h4 class="fw-normal my-1">Things I read</h4>
+            </a>
+            <div class="card-body">
+
+              <div class="bg-light border rounded p-2 mb-3">
+                <p class="mb-2">Economics:</p>
+                <div class="list-group">
+                  <a class="list-group-item list-group-item-action" href="https://www.nber.org/">NBER: Working papers</a>
+                  <a class="list-group-item list-group-item-action" href="https://cepr.org/voxeu/columns">VoxEU: Columns and articles</a>
+                  <a class="list-group-item list-group-item-action" href="https://ourworldindata.org/">Our World in Data: Research and data</a>
+                  <a class="list-group-item list-group-item-action" href="https://www.metaculus.com/questions/">Metaculus: Prediction markets</a>
+                  <a class="list-group-item list-group-item-action" href="https://www.escoe.ac.uk/">ESCoE: Economic Statistics</a>
+                </div>
+              </div>
+              <div class="bg-light border rounded p-2 mb-3">
+                <p class="mb-2">Software:</p>
+                <div class="list-group">
+                  <a class="list-group-item list-group-item-action" href="https://developer.mozilla.org/">MDN: Learning resources</a>
+                  <a class="list-group-item list-group-item-action" href="https://www.w3schools.com/">W3Schools: Learning resources</a>
+                  <a class="list-group-item list-group-item-action" href="https://openai.com/blog/">OpenAI: AI developments</a>
+                  <a class="list-group-item list-group-item-action" href="https://course.fast.ai/">Practical Deep Learning: AI learning resources</a>
+                </div>
+              </div>
+              <div class="bg-light border rounded p-2 mb-3">
+                <p class="mb-2">Blogs and thinktanks (NOT endorsements):</p>
+                <div class="list-group">
+                  <a class="list-group-item list-group-item-action" href="https://www.resolutionfoundation.org/">Resolution Foundation</a>
+                  <a class="list-group-item list-group-item-action" href="https://ifs.org.uk/">Institute for Fiscal Studies</a>
+                  <a class="list-group-item list-group-item-action" href="https://tomforth.co.uk/">Tom Forth</a>
+                  <a class="list-group-item list-group-item-action" href="https://www.themoneyillusion.com/">Scott Sumner</a>
+                  <a class="list-group-item list-group-item-action" href="https://www.nytimes.com/column/paul-krugman">Paul Krugman</a>
+                  <a class="list-group-item list-group-item-action" href="http://www.enlightenmenteconomics.com/blog/">Diane Coyle</a>
+                  <a class="list-group-item list-group-item-action" href="http://paulgraham.com/articles.html">Paul Graham</a>
+                  <a class="list-group-item list-group-item-action" href="https://www.worksinprogress.co/">Works in Progress</a>
+                  <a class="list-group-item list-group-item-action" href="https://marginalrevolution.com/">Marginal Revolution</a>
+                </div>
+              </div>
+              <div class="bg-light border rounded p-2 mb-3">
+                <p class="mb-2">Altruism:</p>
+                <div class="list-group">
+                  <a class="list-group-item list-group-item-action" href="https://80000hours.org/">80,000 hours: Do good with your career</a>
+                  <a class="list-group-item list-group-item-action" href="https://www.givewell.org/">GiveWell: Donations</a>
+                  <a class="list-group-item list-group-item-action" href="https://www.givingwhatwecan.org/">Giving What We Can: Donations</a>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-end align-items-center">
+                <div class="d-block">
+                  <!--<button type="button" class="btn btn-sm btn-outline-secondary">See more</button>-->
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col-xl-8">
+        <div class="col-lg-8">
+
           <div class="card shadow">
-            <a class="anchor" id="made"></a>
-            <a href="#made" class="card-header btn btn-light text-start">
-              <h4 class="fw-normal my-1">Things I've made</h4>
+            <a class="anchor" id="do"></a>
+            <a href="#do" class="card-header btn btn-light text-start">
+              <h4 class="fw-normal my-1">What I can do</h4>
             </a>
             <div class="card-body">
-              <p class="card-text">I like to make things sometimes. Here's a list of some interesting ones.</p>
-              <div class="px-2 py-md-2 pb-4 pb-md-4">
+
+              <div class="row row-cols-lg-2 row-cols-xl-3 g-3">
+
+                <div class="col-lg-6 col-xl-4">
+                  <div class="card">
+                    <a class="card-header btn btn-light shadow-none topic" data-bs-toggle="collapse" href="#collapseEcon" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      <h5 class="my-1">Economics & statistics</h5>
+                    </a>
+                    <div class="collapse topic-content" id="collapseEcon">
+                      <div class="card-body d-flex flex-column">
+                        <button class="btn btn-outline-dark mb-1" data-bs-toggle="modal" data-bs-target="#macroeconomics">Macroeconomics</button>
+                        <button class="btn btn-outline-dark mb-1" data-bs-toggle="modal" data-bs-target="#econometrics">Econometrics</button>
+                        <button class="btn btn-outline-dark mb-1" data-bs-toggle="modal" data-bs-target="#supply-chain-analysis">Supply chain analysis</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-xl-4">
+                  <div class="card">
+                    <a class="card-header btn btn-light shadow-none topic" data-bs-toggle="collapse" href="#collapseBus" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      <h5 class="my-1">Strategy & business</h5>
+                    </a>
+                    <div class="collapse topic-content" id="collapseBus">
+                      <div class="card-body d-flex flex-column">
+                        <button class="btn btn-outline-dark mb-1" data-bs-toggle="modal" data-bs-target="#strategic-finance">Strategic finance</button>
+                        <button class="btn btn-outline-dark mb-1" data-bs-toggle="modal" data-bs-target="#project-management">Project management</button>
+                        <button class="btn btn-outline-dark mb-1" data-bs-toggle="modal" data-bs-target="#cost-benefit-analysis">Cost-benefit analysis</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-xl-4">
+                  <div class="card">
+                    <a class="card-header btn btn-light shadow-none topic" data-bs-toggle="collapse" href="#collapseFin" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      <h5 class="my-1">Financial services</h5>
+                    </a>
+                    <div class="collapse topic-content" id="collapseFin">
+                      <div class="card-body d-flex flex-column">
+                        <button class="btn btn-outline-dark mb-1" data-bs-toggle="modal" data-bs-target="#financial-services-regulation">Financial services regulation</button>
+                        <button class="btn btn-outline-dark mb-1" data-bs-toggle="modal" data-bs-target="#financial-market-analysis">Financial market analysis</button>
+                        <button class="btn btn-outline-dark mb-1" data-bs-toggle="modal" data-bs-target="#cryptocurrency-regulation">Cryptocurrency regulation</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-xl-4">
+                  <div class="card">
+                    <a class="card-header btn btn-light shadow-none topic" data-bs-toggle="collapse" href="#collapseComm" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      <h5 class="my-1">Communication</h5>
+                    </a>
+                    <div class="collapse topic-content" id="collapseComm">
+                      <div class="card-body d-flex flex-column">
+                        <button class="btn btn-outline-dark mb-1" data-bs-toggle="modal" data-bs-target="#team-working-and-leadership">Team working and leadership</button>
+                        <button class="btn btn-outline-dark mb-1" data-bs-toggle="modal" data-bs-target="#negotiation">Negotiation</button>
+                        <button class="btn btn-outline-dark mb-1" data-bs-toggle="modal" data-bs-target="#public-facing-comms">Public-facing comms</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-xl-4">
+                  <div class="card">
+                    <a class="card-header btn btn-light shadow-none topic" data-bs-toggle="collapse" href="#collapseSoft" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      <h5 class="my-1">Software</h5>
+                    </a>
+                    <div class="collapse topic-content" id="collapseSoft">
+                      <div class="card-body d-flex flex-column">
+                        <button class="btn btn-outline-dark mb-1" data-bs-toggle="modal" data-bs-target="#front-end-web-development">Front end web development</button>
+                        <button class="btn btn-outline-dark mb-1" data-bs-toggle="modal" data-bs-target="#apache-web-server">Apache web server</button>
+                        <button class="btn btn-outline-dark mb-1" data-bs-toggle="modal" data-bs-target="#data-analytics">Data analytics</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card shadow mt-4">
+            <a class="anchor" id="made"></a>
+            <a href="#made" class="card-header btn btn-light text-start">
+              <h4 class="fw-normal my-1">Example coding projects</h4>
+            </a>
+            <div class="card-body">
+              <p>A couple of things I've made to show my ability to do basic web development and work with JavaScript packages. I haven't chosen to present anything that demonstrates my ability with R, R-Shiny, Stata, VBA, etc, since this is evidenced in my past work experience.</p>
+              <div class="px-2 pb-3 pb-md-0">
                 <div class="d-grid d-md-flex justify-content-between align-items-center">
                   <div class="fw-light fs-6 pe-2">
-                    <h5>Market Data Dashboard</h5>
-                    <p>A basic dashboard made written in javascript, that charts and provides downloadable datasets for the price and trading volume of any stock, FX pair, or Crypto pair.</p>
+                    <h5>Market data dashboard</h5>
+                    <p>A basic dashboard written in JavaScript, that charts and provides downloadable datasets for the price and trading volume of any US stock, FX pair, or crypto pair. Best viewed on a desktop or tablet screen.</p>
                   </div>
                   <div class="btn-group btn-group-sm">
                     <a class="btn btn-primary px-3" href="/core/dashboard.html">View</a>
@@ -145,53 +263,382 @@
                 <div class="d-flex flex-column flex-md-row justify-content-between align-items-stretch align-items-md-center">
                   <div class="fw-light fs-6 pe-2 ">
                     <h5>This webpage</h5>
-                    <p>A basic homepage made using Bootstrap and CSS. I like to think it looks pretty.</p>
+                    <p>A basic homepage made using HTML, CSS, and a little bit of JQuery, with responsive design to optimise for mobile devices.</p>
                   </div>
                   <div class="btn-group btn-group-sm">
                     <button class="btn btn-primary px-3" data-bs-toggle="popover" data-bs-content="Uhh... You're already here!" data-bs-placement="left" data-bs-trigger="focus">View</button>
-                    <div class="btn btn-light">GitHub</div>
+                    <a class="btn btn-light" href="https://github.com/erj177/homepage">GitHub</a>
                   </div>
                 </div>
 
               </div>
               <div class="d-flex justify-content-end align-items-center">
                 <div class="d-block">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">See more</button>
+                  <!--<button type="button" class="btn btn-sm btn-outline-secondary">See more</button>-->
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-xl-8">
-          <div class="card shadow">
-            <a class="anchor" id="card-3"></a>
-            <a href="#card-3" class="card-header btn btn-light text-start">
-              <h4 class="fw-normal my-1">Another box</h4>
+
+          <div class="card shadow mt-4">
+            <a class="anchor" id="done"></a>
+            <a href="#done" class="card-header btn btn-light text-start">
+              <h4 class="fw-normal my-1">Experience</h4>
             </a>
             <div class="card-body">
-              <p class="card-text">Content TBC</p>
+              <p>See my <a href="/core/CV.pdf">full CV</a> for more details.</p>
 
+              <h6 class="card-text mt-4 mb-1">HM Treasury, UK Government</h6>
+              <p class="lead fs-6 fw-normal mb-2">2021 - present</p>
+              <ul>
+                <li>Financial services regulation</li>
+                <li>Primary markets issues</li>
+                <li>(previously) Regional and local spending</li>
+              </ul>
+
+              <h6 class="card-text mt-4 mb-1">Department for Business, Energy and Industrial Strategy, UK Government</h6>
+              <p class="lead fs-6 fw-normal mb-2">2019 - 2021</p>
+              <ul>
+                <li>Macroeconomic advice and analysis</li>
+                <li>Supply chain analysis and business case assessment</li>
+                <li>Data science</li>
+              </ul>
+
+              <h6 class="card-text mt-4 mb-1">Cabinet Office, UK Government</h6>
+              <p class="lead fs-6 fw-normal mb-2">2018 - 2019</p>
+              <ul>
+                <li>Strategic finance</li>
+                <li>Financial analysis</li>
+                <li>Negotiation and co-ordination</li>
+              </ul>
               <div class="d-flex justify-content-end align-items-center">
                 <div class="d-block">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">See more</button>
+                  <!--<button type="button" class="btn btn-sm btn-outline-secondary">See more</button>-->
                 </div>
               </div>
             </div>
           </div>
+
         </div>
-
-
-
-
 
       </div>
     </div>
   </div>
+  </div>
+  <div class="css-js_ref">
+    <div class="css-js_ref-lg" data-bp="lg"></div>
+  </div>
+
 </main>
 
+<!---Modals below--->
+<div class="modal fade" id="front-end-web-development" tabindex="-1" aria-labelledby="frontEndWebDevelopmentLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title" id="frontEndWebDevelopmentLabel">Front end web development</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6 class="card-text mb-2">Other</h6>
+        <p>I am self-taught using online resources and occasionally asking friends for help. I am familiar with JavaScript, CSS, and HTML. I've used several major JavaScript packages such as JQuery for front end and some NodeJS for back end development.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="apache-web-server" tabindex="-1" aria-labelledby="apacheWebServerLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title" id="apacheWebServerLabel">Apache web server</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6 class="card-text mb-2">Other</h6>
+        <p>I've taken a general interest in web development for several years. I am familiar with linux-based operating systems, and I run this website off an Amazon Web Services linux-based (Ubuntu) server. I can use SQL for database management.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="data-analytics" tabindex="-1" aria-labelledby="dataAnalyticsLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title" id="dataAnalyticsLabel">Data analytics</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6 class="card-text mb-1">HM Treasury, UK Government</h6>
+        <p class="lead fs-6 fw-normal mb-2">2021 - present</p>
+        <p>I use Bloomberg terminal and other data sources to produce analysis to inform policy-making. This has included, for example, a project to better understand the benefits and disadvantages of listing in the UK compared to in other jurisdictions, and a project to analyse equities connected to the Russian government following the Ukraine crisis.</p>
+        <h6 class="card-text mt-4 mb-1">Department for Business, Energy and Industrial Strategy, UK Government</h6>
+        <p class="lead fs-6 fw-normal mb-2">2019 - 2021</p>
+        <p>I used R to conduct analysis on a wide range of issues. This included using natural language processing to analyse the changing discussion of industrial strategy in the Houses of Parliament (using Hansard data). I also used Excel and VBA.</p>
+        <h6 class="card-text mt-4 mb-1">Cabinet Office, UK Government</h6>
+        <p class="lead fs-6 fw-normal mb-2">2018 - 2019</p>
+        <p>I used Google Apps Script to automate a number of previously manual processes, and conducted analysis in order to implement central measures to control spending. I used Excel and VBA to automate the generation of management accounts.</p>
+        <h6 class="card-text mt-4 mb-1">London School of Economics, BSc Economics</h6>
+        <p class="lead fs-6 fw-normal mb-2">2018 - 2019</p>
+        <p>I used Stata in several classes to run regressions and generate visualisations.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
+<div class="modal fade" id="team-working-and-leadership" tabindex="-1" aria-labelledby="teamWorkingAndLeadershipLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title" id="teamWorkingAndLeadershipLabel">Team working and leadership</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6 class="card-text mb-1">HM Treasury, UK Government</h6>
+        <p class="lead fs-6 fw-normal mb-2">2021 - present</p>
+        <p>I lead on several projects related to financial services, bringing together views from across the Treasury and from other government departments in order to create good policy and effectively advise ministers. When I previously worked on regional and local spending, I collaborated with the devolved administrations in Wales, Scotland and Northern Ireland.</p>
+        <h6 class="card-text mt-4 mb-1">Department for Business, Energy and Industrial Strategy, UK Government</h6>
+        <p class="lead fs-6 fw-normal mb-2">2019 - 2021</p>
+        <p>I developed several workstreams off my own initiative and convinced senior leadership that they were worth taking forward. These included a re-working of our cost-benefit analysis methodology for the COVID-19 crisis and an early-stage piece of analysis on the upcoming inflation crisis, the latter of which I presented at a ministerial level.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
+<div class="modal fade" id="negotiation" tabindex="-1" aria-labelledby="negotiationLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title" id="negotiationLabel">Negotiation</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6 class="card-text mb-1">Cabinet Office, UK Government</h6>
+        <p class="lead fs-6 fw-normal mb-2">2018 - 2019</p>
+        <p>I led the process of commissioning business areas within the Cabinet Office for their spend bids in preparation for Spending Review and Business Planning. This required me to manage deadlines, coordinate returns and push back against severe over-spend when appropriate. Later, as decisions were made at a senior level about spend priorities, I pro-actively communicated these with business areas to ensure that they were kept in the loop, explaining the rationale, communicating their concerns, and defending the finance team's decisions when necessary.</p><p>I also led on several central measures to control spend on areas such as travel and training, which required me to negotiate with business areas when they felt that they required additional spend above their initial allocation.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="public-facing-comms" tabindex="-1" aria-labelledby="publicFacingCommsLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title" id="publicFacingCommsLabel">Public-facing comms</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6 class="card-text mb-1">HM Treasury, UK Government</h6>
+        <p class="lead fs-6 fw-normal mb-2">2021 - present</p>
+        <p>As part of my work on financial services policy, I regularly draft ministerial statements, respond to correspondence, contribute to speeches, and communicate with businesses. I recently chaired two industry roundtables attended by senior figures from across the financial services industry, seeking to understand their perspective on policy issues and responding to their questions/challenges. I also regularly brief ministers before external-facing meetings, making sure to inform them of possible sensitivities and preparing them for possible challenges.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="macroeconomics" tabindex="-1" aria-labelledby="macroeconomicsLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title" id="macroeconomicsLabel">Macroeconomics</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6 class="card-text mb-1">Department for Business, Energy and Industrial Strategy, UK Government</h6>
+        <p class="lead fs-6 fw-normal mb-2">2019 - 2021</p>
+        <p>I worked on macroeconomic analysis and advice. As part of this, I delivered a fortnightly briefing to the Director General for Trade, Europe and Analysis on the state of the wider economy and how this would affect his ongoing work on Brexit. I delivered my own novel analysis on issues such as inflation, in order to inform ministers and senior officials about the wider macroeconomic background to their work. I read academic publications on macroeconomic issues and converted the key insights into advice for policy officials as needed.</p>
+        <h6 class="card-text mt-4 mb-1">London School of Economics, BSc Economics</h6>
+        <p class="lead fs-6 fw-normal mb-2">2015 - 2018</p>
+        <p>I learned intermediate-level macroeconomic theory, including principles of economic growth, consumption, investment, business cycles, inflation, monetary/fiscal policy, etc.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="econometrics" tabindex="-1" aria-labelledby="econometricsLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title" id="econometricsLabel">Econometrics</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6 class="card-text mb-1">Department for Business, Energy and Industrial Strategy, UK Government</h6>
+        <p class="lead fs-6 fw-normal mb-2">2019 - 2021</p>
+        <p>I led a project to better understand the relationship between unemployment and productivity in the labour market. As part of this I conducted analysis in R - cleaning data, running regressions, and identifying significant relationships. I also did work reading and drawing relevant insights from academic papers, including understanding their methodology and making judgments about their robustness.</p>
+        <h6 class="card-text mt-4 mb-1">London School of Economics, BSc Economics</h6>
+        <p class="lead fs-6 fw-normal mb-2">2015 - 2018</p>
+        <p>I took advanced courses in econometrics, learning extensive matrix algebra and the underlying theory behind empirical research. In my final year, I took a course in development economics which involved significant analysis of research papers using a randomised design, critiquing their identification strategy, assumptions, and theoretical underpinnings.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="supply-chain-analysis" tabindex="-1" aria-labelledby="supplyChainAnalysisLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title" id="supplyChainAnalysisLabel">Supply chain analysis</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6 class="card-text mb-1">Department for Business, Energy and Industrial Strategy, UK Government</h6>
+        <p class="lead fs-6 fw-normal mb-2">2019 - 2021</p>
+        <p>I conducted analysis of the electric vehicle supply chain to determine vulnerabilities as the UK transitions towards electrification. This involved analysis of supply networks and inventory fluctuations using datasources such as Bloomberg NEF and IHS Markit.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="strategic-finance" tabindex="-1" aria-labelledby="strategicFinanceLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title" id="strategicFinanceLabel">Strategic finance</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6 class="card-text mb-1">Cabinet Office, UK Government</h6>
+        <p class="lead fs-6 fw-normal mb-2">2018 - 2019</p>
+        <p>I reformed the Business Planning and Spending Review processes in the Cabinet Office strategic finance team to increase efficiency and improve financial spend data. I also worked on central measures to control spending in the department, conducted analysis on figures, produced management accounts, and co-ordinated comms across the 30+ business areas in the department.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="cost-benefit-analysis" tabindex="-1" aria-labelledby="costBenefitAnalysisLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title" id="costBenefitAnalysisLabel">Cost-benefit analysis</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6 class="card-text mb-1">Department for Business, Energy and Industrial Strategy, UK Government</h6>
+        <p class="lead fs-6 fw-normal mb-2">2019 - 2021</p>
+        <p>I assessed the case for government funding of various projects in the automotive sector, interviewing leading figures from major firms in the industry. I conducted analysis using revenue and cost projections, assessed risk by reviewing project documentation, and made a recommendation on whether the project should be funded. I reformed the cost-benefit analysis methodology following changes in the wider economy due to the COVID-19 crisis.</p><p>I also led internal government work on the economic case for a new fund designed to draw electric vehicle manufacturing to the UK. Later, I was responsible for reviewing economic cases written by other analysts across the department to assess whether the associated projects they should be funded.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="project-management" tabindex="-1" aria-labelledby="projectManagementLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title" id="projectManagementLabel">Project management</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6 class="card-text mb-1">HM Treasury, UK Government</h6>
+        <p class="lead fs-6 fw-normal mb-2">2021 - present</p>
+        <p>While on 2-month loan to the Subnational Expenditure team, I led a government-wide process to collate granular data on regional and local expenditure. I worked closely with external IT consultants and gained familiarity with the Agile project management framework.</p>
+        <h6 class="card-text mt-4 mb-1">Department for Business, Energy and Industrial Strategy, UK Government</h6>
+        <p class="lead fs-6 fw-normal mb-2">2019 - 2021</p>
+        <p>While in the Central Analysis and Planning team, I built and reviewed logic models and Gantt charts, made risk and feasibility assessments, evaluated project costs and benefits, and more.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="financial-services-regulation" tabindex="-1" aria-labelledby="financialServicesRegulationLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title" id="financialServicesRegulationLabel">Financial services regulation</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6 class="card-text mb-1">HM Treasury, UK Government</h6>
+        <p class="lead fs-6 fw-normal mb-2">2021 - present</p>
+        <p>I lead a comprehensive review of regulations on what disclosure must be provided to retail consumers when they purchase investment products. I also work on general primary markets regulation, including making the UK a more attractive location to list a public company.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="financial-market-analysis" tabindex="-1" aria-labelledby="financialMarketAnalysisLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title" id="financialMarketAnalysisLabel">Financial market analysis</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6 class="card-text mb-1">HM Treasury, UK Government</h6>
+        <p class="lead fs-6 fw-normal mb-2">2021 - present</p>
+        <p>I use Bloomberg terminal and other data sources to produce analysis to inform policy-making. This has included, for example, a project to better understand the benefits and disadvantages of listing in the UK compared to in other jurisdictions, and a project to analyse equities connected to the Russian government following the Ukraine crisis.</p>
+        <h6 class="card-text mt-4 mb-1">London School of Economics, BSc Economics</h6>
+        <p class="lead fs-6 fw-normal mb-2">2015 - 2018</p>
+        <p>I obtained high marks (firsts and 2:1s) in modules on financial market analysis in my second and third years, as part of which I learned about asset pricing, portfolio management, capital structure, international finance, behavioural finance, and more.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="cryptocurrency-regulation" tabindex="-1" aria-labelledby="cryptocurrencyRegulationLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title" id="cryptocurrencyRegulationLabel">Cryptocurrency regulation</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6 class="card-text mb-1">HM Treasury, UK Government</h6>
+        <p class="lead fs-6 fw-normal mb-2">2021 - present</p>
+        <p>I lead on various aspects of cryptocurrency regulation as it relates to primary markets issuances of cryptoasset derivatives. As part of my work on this, I have engaged with industry stakeholders, delivered advice to ministers on risks/opportunities, and gained a wider knowledge of crypto markets through collaboration with other officials.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
@@ -202,10 +649,26 @@
 <footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
   <script>
+
 
     $(document).ready(function(){
       $('[data-bs-toggle="popover"]').popover();
+      $('.masonryContainer').css({'visibility': 'visible', 'opacity': '1', 'margin-top': '-30px'});
+    });
+
+
+    $(".nav-link").click(function() {
+			$(".navbar-collapse").collapse("hide");
+		});
+
+    $('.topic-content').on('show.bs.collapse', function () {
+      $(this).siblings('.topic').addClass('active');
+    });
+
+    $('.topic-content').on('hide.bs.collapse', function () {
+      $(this).siblings('.topic').removeClass('active');
     });
 
   </script>
